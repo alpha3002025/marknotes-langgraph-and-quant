@@ -1,0 +1,11 @@
+**/.env
+.env
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+**/._*
+
+1.lecture-note-fc-langgraph/github-code
+4.lecture-teddy-langgraph
