@@ -120,7 +120,7 @@ rate_limiter = InMemoryRateLimiter(
 
 # rate limiter를 LLM에 적용
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     rate_limiter=rate_limiter,
     # temperature
     # max_tokens
@@ -199,7 +199,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 # rate limiter를 LLM에 적용
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     rate_limiter=rate_limiter,
     # temperature
     # max_tokens
@@ -213,7 +213,7 @@ llm = ChatGoogleGenerativeAI(
 ##### 설명
 생성된 LLM 인스턴스(`ChatGoogleGenerativeAI`)에 앞서 설정한 `rate_limiter`를 적용합니다.
 
-- `model="gemini-2.5-flash"`: 사용할 구글의 AI 모델 이름입니다.
+- `model="gemini-3-flash-preview"`: 사용할 구글의 AI 모델 이름입니다.
 - `rate_limiter=rate_limiter`: LLM 호출 시 자동으로 설정된 속도 제한 로직을 따르도록 주입합니다.
 - `thinking_budget=500`: 모델이 응답을 생성하기 전 수행하는 '추론(Reasoning)' 과정에 할당할 최대 토큰 예산입니다. 500 토큰 내에서 복잡한 논리를 검토한 뒤 최종 답변을 내놓게 됩니다.
 
@@ -303,7 +303,7 @@ rate_limiter = InMemoryRateLimiter(
 
 # rate limiter를 LLM에 적용
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     rate_limiter=rate_limiter,
     # temperature
     # max_tokens
@@ -691,7 +691,7 @@ rate_limiter = InMemoryRateLimiter(
 
 # rate limiter를 LLM에 적용
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     rate_limiter=rate_limiter,
     # temperature
     # max_tokens
@@ -787,7 +787,7 @@ rate_limiter = InMemoryRateLimiter(
 
 # rate limiter를 LLM에 적용
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     rate_limiter=rate_limiter,
     # temperature
     # max_tokens

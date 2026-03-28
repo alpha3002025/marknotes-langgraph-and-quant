@@ -34,7 +34,7 @@ rate_limiter = InMemoryRateLimiter(
 
 # rate limiter를 LLM에 적용
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     rate_limiter=rate_limiter,
     # temperature
     # max_tokens
@@ -48,7 +48,7 @@ llm = ChatGoogleGenerativeAI(
 이 코드는 Google Gemini API를 사용하기 위한 초기 설정 및 속도 제한(Rate Limiting)을 구현합니다.
 1. `os.environ`: 환경 변수에 Google API 키를 설정합니다.
 2. `InMemoryRateLimiter`: Gemini 무료 티어의 제한(분당 10회)을 준수하기 위해 초당 약 0.167회로 요청 속도를 제한하는 객체를 생성합니다.
-3. `ChatGoogleGenerativeAI`: `gemini-2.5-flash` 모델을 초기화하며, 앞서 만든 `rate_limiter`를 적용하여 API 호출 안정성을 확보합니다. `thinking_budget`은 모델의 추론 프로세스에 할당할 토큰 한도를 설정합니다.
+3. `ChatGoogleGenerativeAI`: `gemini-3-flash-preview` 모델을 초기화하며, 앞서 만든 `rate_limiter`를 적용하여 API 호출 안정성을 확보합니다. `thinking_budget`은 모델의 추론 프로세스에 할당할 토큰 한도를 설정합니다.
 
 <br/>
 
